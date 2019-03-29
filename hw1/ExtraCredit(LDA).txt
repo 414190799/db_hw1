@@ -1,0 +1,37 @@
+Using Mallet:
+I ran it in the commands.
+codes(Only for C1):
+bin\mallet import-dir --input C:\Users\baoji\Desktop\db_hw2\data\C1 --output C:\Users\baoji\Desktop\db_hw2\data\C1\data.mallet --keep-sequence --remove-stopwords
+bin\mallet train-topics --input C:\Users\baoji\Desktop\db_hw2\data\C1\data.mallet --num-topics 1 --output-state topic-state.gz
+
+All results:
+0       5       safety airline civil pilots parts air aviation airlines aircraft eat standards investigation spare flight aeronautics force police international company jets
+
+<600> LL/token: -8.48502
+<610> LL/token: -8.48502
+<620> LL/token: -8.48502
+<630> LL/token: -8.48502
+<640> LL/token: -8.48502
+
+0       5       disease mouth hoof agriculture european france health baringdorf graefe crisis glavany cap sheep veterinary figaro countries europe president vaccines farmers
+
+<950> LL/token: -8.67241
+<960> LL/token: -8.67241
+<970> LL/token: -8.67241
+<980> LL/token: -8.67241
+<990> LL/token: -8.67241
+
+0       5       mortgage bank banks takenaka rates rate million loan yen percent loans minister financial cent approx house mortgages prodi year asahi
+
+<950> LL/token: -7.98259
+<960> LL/token: -7.98259
+<970> LL/token: -7.98259
+<980> LL/token: -7.98259
+<990> LL/token: -7.98259
+
+Comparing to we I got:
+Folder C1:  airline 45      safeti 32      pilot 25      
+Folder C4:  disease 40      mouth 26      hoof 24      
+Folder C7:  bank 108      rate 74      mortgage 70   
+mostly the same words, but the order appears to be a little bit different. 
+I only picked the top three words while Mallet by defule picked a lot of words.

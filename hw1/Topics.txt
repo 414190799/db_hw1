@@ -1,0 +1,3 @@
+Folder C1:  airline 45      safeti 32      pilot 25      
+Folder C4:  disease 40      mouth 26      hoof 24      
+Folder C7:  bank 108      rate 74      mortgage 70      
